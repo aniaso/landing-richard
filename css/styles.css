@@ -1,0 +1,95 @@
+/* gothic-a1-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/gothic-a1-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* gothic-a1-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/gothic-a1-v13-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* gothic-a1-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/gothic-a1-v13-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  color: rgb(0, 0, 0);
+  font-family: Gothic A1;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header_wrapper {
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: linear-gradient(
+      287deg,
+      #450e4b 0%,
+      #3c0c41 24.48%,
+      rgba(207, 0, 99, 0) 100%
+    ),
+    #cf0063;
+  margin: 0 144px;
+}
+
+.header_nav {
+  display: block;
+}
+
+.header_list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0px 15px;
+}
+
+.header_link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.header_item {
+  margin-right: 30px;
+}
+
+.header_item:last-child {
+  margin-right: 0px;
+}
