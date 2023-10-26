@@ -59,6 +59,15 @@ body {
   margin: 0px;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.2s linear;
+    z-index: 999;
+}
+
 .header_nav {
   display: block;
 }
