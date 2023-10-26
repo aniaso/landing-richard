@@ -94,6 +94,10 @@ body {
   opacity: 0.6;
 }
 
+.main {
+    display: block;
+}
+
 .page1 {
   min-height: 100vh;
   background: linear-gradient(
