@@ -46,6 +46,7 @@ body {
 .wrapper {
   max-width: 1152px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header_wrapper {
@@ -56,16 +57,15 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0px;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: 0.2s linear;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.2s linear;
+  z-index: 999;
 }
 
 .header_nav {
@@ -104,7 +104,7 @@ body {
 }
 
 .main {
-    display: block;
+  display: block;
 }
 
 .page1 {
@@ -117,6 +117,55 @@ body {
     ),
     #cf0063;
   background-size: cover;
-  padding-top: 263px;
-  padding-bottom: 223px;
+  padding-top: 125px;
+  padding-bottom: 0px;
+}
+
+/*это в медиа прописать % для большого экрана и для маленького*/
+.p1_info {
+  min-height: 680px;
+  background: url(../img/header.png) no-repeat right;
+  background-position: right 0% bottom 0%;
+}
+
+.p1_text {
+  width: 100%;
+  padding-top: 274px;
+  padding-bottom: 244px;
+  margin: 0 auto;
+}
+
+.p1_title {
+  color: #fff;
+  font-family: Gothic A1;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80px;
+  padding-bottom: 10px;
+}
+
+.p1_sub_title {
+  color: #fff;
+  font-family: Gothic A1;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  padding-bottom: 25px;
+}
+
+.get_app {
+  color: #fff;
+  text-align: center;
+  font-family: Gothic A1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+
+  padding: 20px 40px;
+  border-radius: 3px;
+  background: #fc0a7e;
+  border: 0;
 }
