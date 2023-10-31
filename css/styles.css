@@ -239,7 +239,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0 116px;
   align-items: center;
-  margin-bottom: 77px;
   justify-items: center;
   align-items: center;
 }
@@ -297,7 +296,7 @@ body {
 }
 
 .plus_pic_img {
-    display: block;
+  display: block;
   margin-inline: auto;
 }
 
@@ -320,7 +319,52 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
-  margin-bottom: 58px;
   padding-bottom: 163px;
 }
 
+.pluses_num {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 62px;
+  padding: 0 102px;
+  padding-bottom: 170px;
+}
+
+.plus_num_title {
+  color: #333;
+  text-align: center;
+  font-family: Gothic A1;
+  font-size: 59px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+}
+
+.plus_num_about {
+  color: #000;
+  text-align: center;
+  font-family: Gothic A1;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+
+
+.eat_info_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 116px;
+    align-items: center;
+    padding-bottom: 160px;
+  }
+
+.eat_about {
+    color: #6b6b6b;
+    font-family: Gothic A1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
