@@ -351,13 +351,18 @@ body {
 }
 
 
-
+/*попробовать поделить на 5 колонок?*/
 .eat_info_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0 116px;
     align-items: center;
     padding-bottom: 160px;
+  }
+
+.eat_info_grid_second {
+    grid-template-columns: repeat(2, 1fr);
+
   }
 
 .eat_about {
