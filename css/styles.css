@@ -494,6 +494,23 @@ body {
 
 .form_email {
   background: #1b1b1b;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 463px;
+
+}
+
+.form_email_text {
+  padding-top: 130px;
+  padding-bottom: 20px;
+}
+
+.btns_em {
+  padding-top: 40px;
 }
 
 .get_email {
