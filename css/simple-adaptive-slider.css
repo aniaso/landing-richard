@@ -1,0 +1,73 @@
+/**
+  * SimpleAdaptiveSlider by itchief (https://github.com/itchief/ui-components/tree/master/simple-adaptive-slider)
+  * Copyright 2020 - 2022 Alexander Maltsev
+  * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+  */
+
+/* стили для корневого элемента слайдера */
+.itcss {
+  position: relative;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* стили для wrapper */
+.itcss__wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+.itcss__items {
+  display: flex;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
+  will-change: transform;
+  padding-bottom: 27px;
+}
+
+/* стили для элементов */
+.itcss__item {
+  position: relative;
+  flex: 0 0 100%;
+  max-width: 100%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+
+
+/* Индикаторы */
+.itcss__indicators {
+  display: flex;
+  justify-content: center;
+  margin: 0 15%;
+  padding-left: 0;
+  list-style: none;
+  user-select: none;
+  padding-bottom: 140px;
+}
+
+.itcss__indicator {
+  flex: 0 1 auto;
+  width: 7px;
+  height: 7px;
+  margin-right: 3px;
+  margin-left: 3px;
+  background-color: rgb(34 34 34 / 40%);
+  background-clip: padding-box;
+  cursor: pointer;
+}
+
+.itcss__indicator_active {
+  background-color: #222;
+}
+
+/* класс для отключения transition */
+.transition-none {
+  transition: none;
+}

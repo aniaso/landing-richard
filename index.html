@@ -10,6 +10,7 @@
     </link>
     <link rel="stylesheet" href="./css/styles.css">
     </link>
+    <link rel="stylesheet" href="./css/simple-adaptive-slider.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <div class="wrapper">
             <div class="header_wrapper">
                 <div class="header_logo">
-                    <a href="/" class="header_logo_link">
+                    <a href="#main" class="header_logo_link js-scroll">
                         <img src="img\logo.png" alt="Richard - приложение по доставке еды" class="header_logo_pic">
                     </a>
                 </div>
@@ -26,16 +27,16 @@
                 <nav class="header_nav">
                     <ul class="header_list">
                         <li class="header_item">
-                            <a href="#!" class="header_link">About</a>
+                            <a href="#about" class="header_link js-scroll">About</a>
                         </li>
                         <li class="header_item">
-                            <a href="#!" class="header_link">Features</a>
+                            <a href="#features" class="header_link js-scroll">Features</a>
                         </li>
                         <li class="header_item">
-                            <a href="#!" class="header_link">How to Use</a>
+                            <a href="#how_to_use" class="header_link js-scroll">How to Use</a>
                         </li>
                         <li class="header_item">
-                            <a href="#!" class="header_link">Download</a>
+                            <a href="#download" class="header_link js-scroll">Download</a>
                         </li>
                     </ul>
                 </nav>
@@ -45,7 +46,7 @@
 
     <main class="main">
         <!--1page-->
-        <section class="page1">
+        <section class="page1" id='main'>
             <div class="p1_info">
                 <div class="wrapper">
                     <div class="p1_text">
@@ -56,12 +57,13 @@
                 </div>
             </div>
             <div class="arrow">
-                <a href="/#1" class="header_logo_link">
+                <a href="#page2_black" class="header_logo_link js-scroll">
                     <img src="img\svg\arrow-down.svg" alt="" class="p1_arrow_pic">
                 </a>
             </div>
         </section>
-        <section class="page2">
+        <!--2page-->
+        <section class="page2" id="page2_black">
             <div class="wrapper">
                 <div class="p2_info">
                     <h2 class="gray_title">Aenean Consectetur Porta</h2>
@@ -72,7 +74,8 @@
                 </div>
             </div>
         </section>
-        <section class="page3">
+        <!--3page-->
+        <section class="page3" id='about'>
             <div class="wrapper">
                 <div class="p3_info_grid">
                     <div class="p3_info">
@@ -109,7 +112,8 @@
                 </div>
             </div>
         </section>
-        <div class="pluses">
+        <!--4page-->
+        <div class="pluses" id='features'>
             <div class="plus">
                 <div class="plus_pic"><img src="img\svg\burger-icon.svg" alt="Activity Notifications"
                         class="plus_pic_img"></div>
@@ -132,6 +136,7 @@
                     in eros elementum tristique.</p>
             </div>
         </div>
+        <!--4.2page-->
         <div class="pluses_num">
             <div class="plus_num">
                 <h3 class="plus_num_title">+12k</h3>
@@ -150,7 +155,8 @@
                 <p class="plus_num_about">Ullamcorper</p>
             </div>
         </div>
-        <section class="eat">
+        <!--5page-->
+        <section class="eat" id='how_to_use'>
             <div class="wrapper">
                 <div class="eat_info_grid">
                     <div class="p3_info">
@@ -180,9 +186,77 @@
                 </div>
             </div>
         </section>
+        <!-- Разметка слайдера (html код) -->
+        <div class="itcss">
+            <div class="itcss__wrapper">
+                <div class="quote_pic">
+                    <img src="img\quote.png" alt="quote" class="quote_pic_png">
+                </div>
+                <div class="itcss__items">
+                    <div class="itcss__item">
+                        <p class="quote_text">HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non
+                            commodo
+                            luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Pus sit amet fermentum.
+                            Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis
+                            euismod.ing</p>
+                        <div class="quote_aut_paper">
+                            <p class="quote_aut">Joshua Home</p>
+                            <div class="quote_line"></div>
+                            <p class="quote_paper">New York Times</p>
+                        </div>
+                    </div>
+                    <div class="itcss__item">
+                        <p class="quote_text">In genere, valde delectatus sum visitationem meam ad Constellationes
+                            delectamenti popina. Quod atmosphaera, cibum et ministerium esset summo scarifatio et ego
+                            would certus suadeo is locus ut quis vultus parumper magnus locus ad prandium.</p>
+                        <div class="quote_aut_paper">
+                            <p class="quote_aut">Amanda Brith</p>
+                            <div class="quote_line"></div>
+                            <p class="quote_paper">Paper Town</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- спонсоры -->
+        <div class="partners">
+            <div class="wrapper">
+                <div class="partners_pic">
+                    <img src="img\partners.png" alt="partners" class="partners">
+                </div>
+            </div>
+        </div>
+        <!-- bg phones -->
+        <div class="app-bg">
+            <div class="app_pic">
+                <img src="img\app-bg.jpg" alt="app-bg" class="app-bg_pic">
+            </div>
+        </div>
+        <!-- form download-->
+        <div class="form" id="download">
+            <div class="form_bg">
+                <h1 class="form_bg_text p2_title">Ready to get started?</h1>
+                <div class="btns">
+                    <button class="get_app">Download Now</button>
+                    <button class="get_app_not_active">Get in Touch</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- form email-->
+        <div class="form_email">
+                <h1 class="form_bg_text p2_title">Get updates from Richard</h1>
+                <h2 class="gray_title">New course alerts, discounts and free lessons</h2>
+                <div class="btns">
+                    <button class="get_email">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
     </main>
 
-
+    <script defer src="./js/simple-adaptive-slider.js"></script>
+    <script defer src="./js/main.js"></script>
 </body>
 
 </html>

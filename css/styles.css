@@ -68,6 +68,10 @@ body {
   z-index: 999;
 }
 
+.header_active {
+  background: #1b1b1b;
+}
+
 .header_nav {
   display: block;
 }
@@ -350,26 +354,160 @@ body {
   line-height: 24px;
 }
 
-
 /*попробовать поделить на 5 колонок?*/
 .eat_info_grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0 116px;
-    align-items: center;
-    padding-bottom: 160px;
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 116px;
+  align-items: center;
+  padding-bottom: 160px;
+}
 
 .eat_info_grid_second {
-    grid-template-columns: repeat(2, 1fr);
-
-  }
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .eat_about {
-    color: #6b6b6b;
-    font-family: Gothic A1;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
+  color: #6b6b6b;
+  font-family: Gothic A1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.quote_pic_png {
+  display: block;
+  margin: auto;
+  padding-bottom: 63px;
+}
+
+.quote_text {
+  text-align: center;
+  color: #6b6b6b;
+  text-align: center;
+  font-family: Gothic A1;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  padding-bottom: 17px;
+}
+
+.quote_aut_paper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote_aut {
+  color: #6b6b6b;
+  text-align: center;
+  font-family: Gothic A1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.quote_line {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.quote_line::after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: #d3d3d3;
+}
+
+.quote_paper {
+  color: #6b6b6b;
+  text-align: center;
+  font-family: Gothic A1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.partners {
+  padding-bottom: 118px;
+  display: flex;
+}
+
+.partners_pic {
+  max-width: 1440px;
+  max-height: 518px;
+  margin: auto;
+}
+
+.app-bg_pic {
+  width: 100%;
+}
+
+.form {
+  background: linear-gradient(276deg, #6e28b1 0%, rgba(0, 0, 0, 0) 100%),
+    #fc0a7e;
+  width: 100%;
+  height: 474px;
+}
+
+.form_bg {
+  background: url(../img/Group.png) center/cover no-repeat;
+  padding-bottom: 0;
+  width: 100%;
+  height: 474px;
+  padding-top: 165px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.get_app_not_active {
+  color: #fff;
+  text-align: center;
+  font-family: Gothic A1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 19px 39px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid #b04bb3;
+  transition: background 0.2s ease;
+}
+
+.get_app_not_active:hover,
+.get_app_not_active:active,
+.get_app_not_active:focus {
+  background: #fc0a7e;
+  border: 1px solid #fc0a7e;
+}
+
+.form_email {
+  background: #1b1b1b;
+}
+
+.get_email {
+  color: #1c1c1c;
+  text-align: center;
+  font-family: Gothic A1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+
+  padding: 20px 40px;
+  border-radius: 0px 3px 3px 0px;
+  background: #fc0a7e;
+  border: 0;
+  transition: background 0.2s ease;
 }
