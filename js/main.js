@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const smoothScroll = function (targetEl, duration) {
       const headerElHeight = document.querySelector(".header").clientHeight;
       let target = document.querySelector(targetEl);
-      let targetPosition = target.getBoundingClientRect().top - headerElHeight+1;
+      let targetPosition = target.getBoundingClientRect().top - headerElHeight+3;
       let startPosition = window.pageYOffset;
       let startTime = null;
   

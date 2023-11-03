@@ -49,6 +49,12 @@ body {
   padding: 0 15px;
 }
 
+.wrapper_full {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .header_wrapper {
   height: 100px;
   display: flex;
@@ -500,8 +506,6 @@ body {
   align-content: center;
   justify-content: center;
   align-items: center;
-  height: 463px;
-
 }
 
 .form_email_text {
@@ -509,11 +513,31 @@ body {
   padding-bottom: 20px;
 }
 
-.btns_em {
-  padding-top: 40px;
+.fomr_inp_but {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  max-width: 465px;
+  padding-bottom: 146px;
+}
+
+.enter_email {
+  padding: 0.74rem 1rem;
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+  border-radius: 3px 0px 0px 3px;
+  background: #fff;
+  box-shadow: 0px 0px 0px 0px #fc0a7e;
+  border: 0;
 }
 
 .get_email {
+  margin-left: -1px;
+  display: flex;
   color: #1c1c1c;
   text-align: center;
   font-family: Gothic A1;
@@ -527,4 +551,49 @@ body {
   background: #fc0a7e;
   border: 0;
   transition: background 0.2s ease;
+}
+
+.get_email:hover,
+.get_email:active,
+.get_email:focus {
+  background: #f5499d;
+}
+
+.footer {
+  background: #1b1b1b;
+}
+
+.footer_wrapper {
+  max-width: 575px;
+  display: flex;
+  width: 575px;
+  padding: 0px 0px 60px 0px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer_logo {
+  padding-bottom: 30px;
+}
+
+.footer_menu {
+  display: flex;
+  width: 575px;
+  padding: 0px 14.5px 0px 15.5px;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer_menu_link {
+  color: #6b6b6b;
+  text-align: center;
+  font-family: Gothic A1;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
 }
