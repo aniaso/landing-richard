@@ -294,9 +294,7 @@ body {
 }
 
 .pluses {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 62px;
+  display: flex;
   padding: 0 102px;
   padding-top: 160px;
 }
@@ -333,11 +331,17 @@ body {
 }
 
 .pluses_num {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 62px;
+  display: flex;
+  flex-wrap: wrap;
   padding: 0 102px;
   padding-bottom: 170px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.plus_num {
+  padding: 35px;
+  min-width: 265px;
 }
 
 .plus_num_title {
@@ -596,4 +600,22 @@ body {
   font-weight: 400;
   line-height: 20px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1360px) {
+  .p1_info {
+    min-height: 680px;
+    background: url() no-repeat right;
+    background-position: right 0% bottom 0%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p1_info {
+    background-size: 300px auto;
+  }
+}
+
+@media screen and (max-width: 574px) {
+
 }
